@@ -1,0 +1,123 @@
+.box {
+    background-image: url('../assets/marble.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    height: 96vh;
+}
+
+span {
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+.add-ons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.pizza-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza-bloc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 50px 0;
+}
+
+.pizza-bloc img {
+    width: 100%;
+}
+
+.pizza {
+    width: 50%;
+    z-index: 0;
+}
+
+.none {
+    display: none;
+}
+
+.sauce {
+    position: absolute;
+    width: 52%;
+    z-index: 1;
+}
+
+.cheese {
+    position: absolute;
+    width: 52%;
+    z-index: 2;
+}
+
+.salami,
+.salmon,
+.shrimps {
+    position: absolute;
+    width: 55%;
+    z-index: 3;
+}
+
+.tomatoes,
+.sunTomatoes {
+    position: absolute;
+    width: 55%;
+    z-index: 4;
+}
+
+.mushrooms {
+    position: absolute;
+    width: 55%;
+    z-index: 5;
+}
+
+.green-pepper,
+.basil {
+    position: absolute;
+    width: 55%;
+    z-index: 6;
+}
+
+.red-pepper {
+    position: absolute;
+    width: 55%;
+    z-index: 7;
+}
+
+.chives,
+.onions,
+.parsley {
+    position: absolute;
+    width: 55%;
+    z-index: 8;
+}
+
+.olives,
+.capres {
+    position: absolute;
+    width: 55%;
+    z-index: 9;
+}
+
+.one-check {
+    display: flex;
+    justify-content: flex-start;
+    margin: 3px;
+}
