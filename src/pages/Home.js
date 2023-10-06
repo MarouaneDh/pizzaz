@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import Pizza from '../assets/pizza.jpg'
+import Steam from '../assets/steam.gif'
 
 import Salsa from '../assets/sauces/salsa-sauce.png'
 import BBQ from '../assets/sauces/bbq-sauce.png'
@@ -231,6 +232,9 @@ const Home = () => {
         <div className="box">
             <span>{totalPrice}$</span>
             <div className='pizza-container'>
+                {
+                    isCheeseSelected && isSauceSelected && <img className='steam' src={Steam} alt='steam' />
+                }
                 <div className='pizza-bloc'>
                     <img className='pizza' src={Pizza} alt='pizza' />
 

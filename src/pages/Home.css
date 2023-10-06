@@ -1,7 +1,4 @@
 .box {
-    background-image: url('../assets/marble.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,6 +29,8 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
+    perspective: 500px;
+    overflow: hidden;
 }
 
 .pizza-bloc {
@@ -40,6 +39,27 @@ label {
     align-items: center;
     position: relative;
     margin: 50px 0;
+    animation: rotating 20s linear infinite;
+    transform-style: preserve-3d;
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotateX(60deg) rotate(0deg) translateZ(-30px);
+    }
+
+    100% {
+        transform: rotateX(60deg) rotate(360deg) translateZ(-30px);
+    }
+}
+
+.steam {
+    position: absolute;
+    z-index: 100;
+    transform: translateY(-50px);
+    width: 300px;
+    height: 300px;
+    opacity: 0.5;
 }
 
 .pizza-bloc img {
